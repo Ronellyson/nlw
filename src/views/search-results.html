@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% set pageId = "page-search-results" %}
+
+{% block title %}
+    <title>Criar um ponto de Ecoleta</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/search-results.css">
+{% endblock styles %}
+
+{% block content %}
+    {% include "partials/page-header.html" %}
+
+    <main>
+
+        <h4>
+            <strong>2 pontos</strong>
+            encontrados
+        </h4>
+
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/938045/pexels-photo-938045.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Colectoria">
+                <h1>Colectoria</h1>
+                <h3>Resíduos Eletrônicos, Lâmpadas</h3>
+                <p>
+                    Rio do sul, Santa Catarina
+                    <br/>
+                    Guilherme Gembarlla, Jardim América
+                    <br/>
+                    Nº260
+                </p>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/167538/pexels-photo-167538.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Colectoria">
+                <h1>Papersider</h1>
+                <h3>Papéis e Papelão</h3>
+                <p>
+                    Rio do sul, Santa Catarina
+                    <br/>
+                    Guilherme Gembarlla, Jardim América
+                    <br/>
+                    Nº260
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+{% endblock content %}
